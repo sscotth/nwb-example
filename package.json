@@ -1,14 +1,23 @@
 {
-  "name": "nwb-example",
+  "name": "myappname",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Describe myappname here",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nwb build-react-app",
+    "clean": "nwb clean-app",
+    "start": "nwb serve-react-app",
+    "test": "nwb test",
+    "test:watch": "nwb test --server"
   },
-  "author": "Scott Humphries <npm@sscotth.io> (https://sscotth.io/)",
-  "license": "MIT",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
   "devDependencies": {
-    "nwb": "^0.11.0"
-  }
+    "nwb": "0.11.x"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": ""
 }
